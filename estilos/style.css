@@ -35,12 +35,15 @@ section#login{
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
+
+    transition: width 0.9s, heigth 0.9s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem{
     display: block;
-    background: #798AF7 url(../Img/pexels-torsten-dettlaff-193003.jpg) no-repeat;
-    background-size: contain;
+    background: #798AF7 url(../Img/pexels-daniel-watson-1487154.jpg) no-repeat;
+    background-size:cover ;
     background-position: left bottom;
     height: 200px;
 }
