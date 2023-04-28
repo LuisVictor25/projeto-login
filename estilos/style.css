@@ -14,13 +14,17 @@
 html, body{
     background-color: #49a09d;
     height: 100vh;
-    width: 100vw;
+    width: 98vw;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: hidden; /*Hide vertical scrolllbar*/
+    
 }
 
 main{
     position: relative;
     height: 100vh;
     width: 100vw;
+  
 }
 
 section#login{
@@ -35,6 +39,7 @@ section#login{
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
+    border-radius: 50px;
 
     transition: width 0.3s, heigth 0.3s;
     transition-timing-function: ease;
@@ -45,7 +50,7 @@ section#login > div#imagem{
     background: #49a09d url(../Img/pexels-daniel-watson-1487154.jpg) no-repeat;
     background-size:cover ;
     background-position: left bottom;
-    height: 200px;
+    height: 166px;
 }
 
 section#login > div#formulario{
@@ -56,8 +61,50 @@ section#login > div#formulario{
 div#formulario{
     text-align: center;
     margin-bottom: 10px;
+    font-size: 0.8em;
 }
 
-div#formulario{
-    font-size: 0.8em;
+form >div.campo{
+    background-color: #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40%;
+    border-radius: 5px;
+    margin:5px 0px;
+}
+
+form > input[type="submit"]{
+   display: block;
+   font-size: 0,5em;
+   width: 100%;
+   height: 27px;
+   background-color:#49a09d ;
+   color: white;
+   border:none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+form > input[type="submit"]:hover{
+    background-color: #125e5c;
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    font-size:0,5em;
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    background-color:#26b5b1;
+    border: none;
+    border-radius: 5px;
+    color: #2d2646;
+    border: 1px solid #49a09d;
+    text-decoration: none;
+}
+
+form > a.botao > span{
+    font-size: 0,5em;
 }
